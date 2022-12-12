@@ -1,0 +1,105 @@
+.sidebar__Main{
+    background-color: black;
+    color: wheat;
+    width: 200px;
+    height: 100vh;
+    position: sticky;
+    top: 0px;
+    bottom: 0
+}
+
+.sidebar__Sections{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  align-items: center;
+}
+
+.sidebar__Sections h1{
+    color:red
+}
+
+.sidebar__Sections:hover{
+    background:lightblue;
+    cursor: pointer;
+}
+
+.sidebar__Main__Section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* background: red; */
+    /* height: 100%; */
+}
+
+.small__Sidebar{
+    display: none;
+}
+
+.small__Sidebar__Transparent__Layout{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(0, 0, 0,.6);
+    z-index: 10;
+}
+
+.small__Sidebar__Middle__Section{
+    position: fixed;
+    top: 0;
+    left: -4%;
+    height: 90vh;
+    margin:50px;
+    width: 90%;
+    background-color: rgb(0, 0, 0);
+    z-index: 20;
+    background-color: white;
+    color: black;
+}
+
+.ham{
+    cursor: pointer;
+    position: absolute;
+     color: white; 
+      top: 60px;
+      right: 10px;
+     font-size: 30px; 
+     top: -4px;
+     cursor: pointer;
+     color: black;
+}
+
+.small__Sidebar__Middle__Section{
+    /* overflow-y: scroll; */
+}
+
+
+
+.close{
+     cursor: pointer; 
+     left: 20px; 
+
+     margin-left: 40px; 
+
+} 
+
+.sidebar__Sections{
+    display: flex;
+    align-items: center;
+}
+
+
+.ActiveButton{
+    background-color: gray;
+}
+
+@media screen and (max-width:750px){
+    .sidebar__Main{
+        display: none;
+    }
+    .small__Sidebar{
+        display: block;
+    }
+}

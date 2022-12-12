@@ -1,0 +1,70 @@
+.home__Main{
+  display: flex;
+}
+
+.home__Section{
+   margin-top: 20px;
+   margin-left: 20px;
+   width: 100%;
+   display: flex;
+   position: relative;
+}
+
+.home__Info{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(12rem,1fr));
+    gap: 1.2rem;
+}
+
+
+.home__Tops__Info{
+    position: sticky;
+    top: 0px;
+    bottom: 0px;
+    height: 100vh;
+}
+
+.home__Charts{
+    width: 50%;
+}
+
+.play__pause{
+    width: 100%;
+}
+
+.wrapper{
+    display: flex;
+    margin-top: 40px;
+    margin-right: 30px;
+    
+}
+@media screen and (max-width:1000px){
+    .wrapper{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:800px){
+    .home__Section{
+        flex-direction: column-reverse;
+    }
+    .home__Tops__Info{
+        margin-bottom: 100px;
+        position: relative;
+        margin-top: 40px;
+    }
+    .top__Artists{
+        margin-top: 40px;
+    }
+    .home__Card{
+        width:"100%"
+    }
+    .home__Info{
+        width: 100%;
+        /* background-color: red; */
+    }
+    .home__Charts{
+        width:100%
+    }
+   
+}
+
